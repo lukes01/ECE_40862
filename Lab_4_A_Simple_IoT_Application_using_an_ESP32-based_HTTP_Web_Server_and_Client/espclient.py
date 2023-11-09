@@ -14,7 +14,7 @@ def print_Hall_Temp(tim):
     addr = socket.getaddrinfo("api.thingspeak.com",80)[0][-1]
     sock.connect(addr)
     host = "api.thingspeak.com"
-    path = "api_key=AKJ923LH4M3O3IUX&field1="+str(temp)+"&field2="+str(hall)
+    path = "api_key='''INSERT API KEY HERE'''&field1="+str(temp)+"&field2="+str(hall)
     sock.send(bytes("GET /update?%s HTTP/1.0\r\nHost: %s\r\n\r\n" %(path,host),"utf8"))
     numRan += 1
     sock.close()
