@@ -21,8 +21,8 @@ def print_Hall_Temp(tim):
     
     
 def connectWifi():
-    ssid = 'Rise Resident'
-    pword = 'Boilermakers*100'
+    ssid = ''    #Insert Wifi network name here
+    pword = ''    #Insert Wifi network password here
     wlan = network.WLAN(network.STA_IF)
     wlan.active(True)
     wlan.scan()
